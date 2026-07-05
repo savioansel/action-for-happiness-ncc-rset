@@ -12,9 +12,9 @@ export const siteContent = {
     affiliation:
       "An Initiative of the NCC Unit, Rajagiri School of Engineering & Technology (RSET)",
     location: [
-      "Rajagiri School of Engineering & Technology",
-      "Rajagiri Valley",
-      "Kakkanad",
+      "Rajagiri School of Engineering & Technology,",
+      "Rajagiri Valley,",
+      "Kakkanad,",
       "Kochi, Kerala 682039",
     ],
   },
@@ -144,11 +144,11 @@ export const siteContent = {
   ] satisfies FAQItem[],
   contact: {
     emailLabel: "Email",
-    email: "outreach@rset.edu.in",
+    email: "nccrset2023@gmail.com",
     phoneLabel: "Phone",
-    phone: "+91 98765 43210",
+    phone: "+91 95676 83959",
     whatsappLabel: "WhatsApp",
-    whatsapp: "+91 98765 43210",
+    whatsapp: "+91 85903 76816",
   },
   images: {
     hero: {
