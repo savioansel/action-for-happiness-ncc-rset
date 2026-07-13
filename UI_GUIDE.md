@@ -4,7 +4,7 @@
 
 This document defines the visual language for the Community Outreach Initiative website.
 
-The goal is to create a premium, trustworthy, modern nonprofit website suitable for presentation to the Director of Rajagiri School of Engineering & Technology (RSET).
+The goal is to create a premium, trustworthy, modern nonprofit website suitable for presentation to the Director of Rajagiri School of Engineering & Technology (Autonomous).
 
 The overall feeling should be inspired by Action for Happiness—not copied, but similar in clarity, simplicity, and storytelling.
 

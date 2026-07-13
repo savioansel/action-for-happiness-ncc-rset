@@ -28,7 +28,7 @@ export function HeroSection() {
         <Reveal className="max-w-3xl">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/22 bg-white/12 px-4 py-2 text-sm font-semibold text-white shadow-[0_18px_48px_-30px_rgb(0_0_0_/_0.65)] backdrop-blur">
             <HeartHandshake className="size-4 text-orange" aria-hidden="true" />
-            {siteContent.organization.name}
+            {siteContent.hero.badge}
           </div>
           <h1 className="max-w-3xl text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-7xl">
             {siteContent.hero.mainHeading}

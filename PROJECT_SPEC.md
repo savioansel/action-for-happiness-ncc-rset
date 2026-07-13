@@ -1,7 +1,7 @@
 # PROJECT_SPEC.md
 
 ## Objective
-Build a premium, production-quality, single-page community outreach website for presentation to the Director of Rajagiri School of Engineering & Technology (RSET).
+Build a premium, production-quality, single-page community outreach website for presentation to the Director of Rajagiri School of Engineering & Technology (Autonomous).
 
 The website represents **an initiative of the NCC Unit, RSET** and is open to everyone—not just NCC cadets.
 

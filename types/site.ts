@@ -25,3 +25,11 @@ export type TimelineStep = {
   title: string;
   description: string;
 };
+
+export type Founder = {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+};
+

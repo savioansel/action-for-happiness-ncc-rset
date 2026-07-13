@@ -5,7 +5,7 @@
 Community Outreach Initiative
 
 An Initiative of the NCC Unit,
-Rajagiri School of Engineering & Technology (RSET)
+Rajagiri School of Engineering & Technology (Autonomous)
 
 Location:
 Rajagiri School of Engineering & Technology
