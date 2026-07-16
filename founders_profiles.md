@@ -172,8 +172,8 @@ humanity, and God.
 
 ## 8)
 
-**PRINCIPAL**\
-**AL-FITRAH ISLAMIC SCHOOL SREEMOOLANAGARAM**
+**Soudha Salim**
+**PRINCIPAL, AL-FITRAH ISLAMIC SCHOOL SREEMOOLANAGARAM**
 
 ### A New Milestone in Our Journey
 
@@ -197,3 +197,39 @@ derived from the experience of working in Palliative care. The book has
 a Malayalam version also. Is interested in spreading the ideas of
 respecting the autonomy of patients and good death and also the
 universalization of Advance living will.
+
+------------------------------------------------------------------------
+
+## 10)
+
+**Mk Shakkir** Manager, Al-Fitrah Islamic School, Sreemoolanagaram
+
+**"Driving Innovation, Leading Change"**
+
+"As we embark on this exciting new journey, our focus remains steadfast on driving meaningful impact and creating valuable solutions. Awareness represents a significant milestone in our growth, and we are committed to fostering innovation and excellence every step of the way. Together with our incredible team, we look forward to building a brighter, more connected future."
+
+------------------------------------------------------------------------
+
+## 11)
+
+**Seena Th Thahir** Health and Educational Standing Committee Chairperson, Sreemoolanagaram Grama Panchayath
+
+"True happiness begins with a healthy community. Nurturing health education is the first step toward a brighter, happier tomorrow."
+
+------------------------------------------------------------------------
+
+## 12)
+
+**Ranjit Sadanandan**
+
+I am a retired Under Secretary from the Government and currently serve as a Yoga Coach at Cosmic Rhythm International School of Yoga and Research Center, Cochin.
+
+I hold a Master's Degree in Yoga from Annamalai University, Chidambaram, Tamil Nadu, and I am a qualified Yoga Therapist from the Bihar School of Yoga, specializing in the management of lifestyle diseases through yogic practices.
+
+At the centre, I conduct training in:
+
+YogasanasSurya NamaskaraPranayamaBandhasYoga NidraYoga TherapyMudra Therapy
+
+My mission is to help individuals improve their physical health, mental well-being, and overall quality of life through the authentic principles of yoga. I believe that regular yoga practice fosters balance, inner strength, and a healthier lifestyle.
+
+"Once you commit yourself to yoga, happiness and inner peace naturally become a part of your life."

@@ -199,8 +199,8 @@ export const siteContent = {
       image: "/founders/5.jpeg",
     },
     {
-      name: "Sr. Dr. Liji Joseph, M.Phil., Ph.D.",
-      role: "Licensed Clinical Psychologist",
+      name: "Sr. Dr. Liji Joseph",
+      role: "M.Phil., Ph.D., Licensed Clinical Psychologist",
       bio: "A Licensed Clinical Psychologist (RCI-CRR No. 22157) and Registered Mental Health Professional (KSMHA Reg. No. CP86/2024/SMHA) with over 16 years of professional experience. Currently serving at Navajyothi Centre for Child and Adolescent Mental Health and Kusumagiri Mental Health Centre, Kakkanad, Kochi. Expertise in psychological assessment, psychometric testing, diagnosis, counselling, and evidence-based psychotherapy for children, adolescents, adults, couples, and families.\n\nMission: Helping individuals and families discover their inner strength, build resilience, and find true happiness.",
       image: "/founders/6.jpeg",
     },
@@ -211,8 +211,8 @@ export const siteContent = {
       image: "/founders/7.jpeg",
     },
     {
-      name: "Principal, Al-Fitrah Islamic School",
-      role: "Sreemoolanagaram",
+      name: "Soudha Salim",
+      role: "Principal, Al-Fitrah Islamic School, Sreemoolanagaram",
       bio: "\"Every great achievement begins with the courage to take the first step. With the launch of this new initiative, we are stepping into a future full of possibilities. Guided by our core values, we aim to inspire awareness, empower communities, and deliver excellence in everything we do. Join us as we pave the way for a new era of growth.\"",
       image: "/founders/8.jpeg",
     },
@@ -221,6 +221,24 @@ export const siteContent = {
       role: "Family Medicine & Palliative Care Specialist",
       bio: "Has done post graduation in General Practice/Family Medicine. After undergoing training in Palliative care, has worked for four years in Palliative care in an N.G.O. (2019-2023). Based on that experience she has written a book 'Wings of solace', which is a collection of anecdotes derived from the experience of working in Palliative care. The book has a Malayalam version also. Is interested in spreading the ideas of respecting the autonomy of patients and good death and also the universalization of Advance living will.",
       image: "/founders/9.jpeg",
+    },
+    {
+      name: "Mk Shakkir",
+      role: "Manager, Al-Fitrah Islamic School, Sreemoolanagaram",
+      bio: "**\"Driving Innovation, Leading Change\"**\n\n\"As we embark on this exciting new journey, our focus remains steadfast on driving meaningful impact and creating valuable solutions. Awareness represents a significant milestone in our growth, and we are committed to fostering innovation and excellence every step of the way. Together with our incredible team, we look forward to building a brighter, more connected future.\"",
+      image: "/founders/10.jpeg",
+    },
+    {
+      name: "Seena Th Thahir",
+      role: "Health & Educational Standing Committee Chairperson, Sreemoolanagaram Grama Panchayath",
+      bio: "\"True happiness begins with a healthy community. Nurturing health education is the first step toward a brighter, happier tomorrow.\"",
+      image: "/founders/11.jpeg",
+    },
+    {
+      name: "Ranjit Sadanandan",
+      role: "Yoga Coach, Cosmic Rhythm International School of Yoga & Research Center",
+      bio: "I am a retired Under Secretary from the Government and currently serve as a Yoga Coach at Cosmic Rhythm International School of Yoga and Research Center, Cochin.\n\nI hold a Master's Degree in Yoga from Annamalai University, Chidambaram, Tamil Nadu, and I am a qualified Yoga Therapist from the Bihar School of Yoga, specializing in the management of lifestyle diseases through yogic practices.\n\nAt the centre, I conduct training in:\n\n- Yogasanas\n- Surya Namaskara\n- Pranayama\n- Bandhas\n- Yoga Nidra\n- Yoga Therapy\n- Mudra Therapy\n\nMy mission is to help individuals improve their physical health, mental well-being, and overall quality of life through the authentic principles of yoga. I believe that regular yoga practice fosters balance, inner strength, and a healthier lifestyle.\n\n\"Once you commit yourself to yoga, happiness and inner peace naturally become a part of your life.\"",
+      image: "/founders/12.jpeg",
     },
   ] satisfies Founder[],
 } as const;
