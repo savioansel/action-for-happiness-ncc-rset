@@ -233,3 +233,13 @@ YogasanasSurya NamaskaraPranayamaBandhasYoga NidraYoga TherapyMudra Therapy
 My mission is to help individuals improve their physical health, mental well-being, and overall quality of life through the authentic principles of yoga. I believe that regular yoga practice fosters balance, inner strength, and a healthier lifestyle.
 
 "Once you commit yourself to yoga, happiness and inner peace naturally become a part of your life."
+
+------------------------------------------------------------------------
+
+## 13)
+
+**Hussain Swalahi**
+HST ARABIC
+Govt.HSS Kuttamassery
+
+"Education is not just about teaching words, it's about lighting up lives. Inspiring the younger generation with wisdom and values brings true happiness."

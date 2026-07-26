@@ -9,6 +9,7 @@ import { Stagger, StaggerItem } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { SectionShell } from "@/components/section-shell";
 import { siteContent } from "@/data/site-content";
+import { cn } from "@/lib/utils";
 import type { Founder } from "@/types/site";
 
 export function FoundersSection() {
@@ -37,6 +38,8 @@ export function FoundersSection() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
+  const totalFounders = siteContent.founders.length;
+
   return (
     <SectionShell id="founders" variant="cream">
       <SectionHeading
@@ -46,12 +49,23 @@ export function FoundersSection() {
       />
 
       <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {siteContent.founders.map((founder) => (
-          <StaggerItem key={founder.name}>
-            <button
-              onClick={() => setSelectedFounder(founder)}
-              className="focus-ring group w-full text-left flex items-stretch rounded-[1.25rem] bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-soft cursor-pointer overflow-hidden"
+        {siteContent.founders.map((founder, index) => {
+          const isLast = index === totalFounders - 1;
+          const isSingleInThreeCol = isLast && totalFounders % 3 === 1;
+          const isSingleInTwoCol = isLast && totalFounders % 2 === 1;
+
+          return (
+            <StaggerItem
+              key={founder.name}
+              className={cn(
+                isSingleInTwoCol && "sm:col-span-2 sm:max-w-md sm:mx-auto w-full",
+                isSingleInThreeCol && "lg:col-span-1 lg:col-start-2 lg:max-w-none"
+              )}
             >
+              <button
+                onClick={() => setSelectedFounder(founder)}
+                className="focus-ring group w-full text-left flex items-stretch rounded-[1.25rem] bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-soft cursor-pointer overflow-hidden"
+              >
               {/* Left-side Image with Gradient Transition */}
               <div className="relative w-24 sm:w-28 shrink-0 overflow-hidden">
                 <Image
@@ -80,7 +94,8 @@ export function FoundersSection() {
               </div>
             </button>
           </StaggerItem>
-        ))}
+        );
+      })}
       </Stagger>
 
       <AnimatePresence>

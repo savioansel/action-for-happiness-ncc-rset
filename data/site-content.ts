@@ -240,5 +240,11 @@ export const siteContent = {
       bio: "I am a retired Under Secretary from the Government and currently serve as a Yoga Coach at Cosmic Rhythm International School of Yoga and Research Center, Cochin.\n\nI hold a Master's Degree in Yoga from Annamalai University, Chidambaram, Tamil Nadu, and I am a qualified Yoga Therapist from the Bihar School of Yoga, specializing in the management of lifestyle diseases through yogic practices.\n\nAt the centre, I conduct training in:\n\n- Yogasanas\n- Surya Namaskara\n- Pranayama\n- Bandhas\n- Yoga Nidra\n- Yoga Therapy\n- Mudra Therapy\n\nMy mission is to help individuals improve their physical health, mental well-being, and overall quality of life through the authentic principles of yoga. I believe that regular yoga practice fosters balance, inner strength, and a healthier lifestyle.\n\n\"Once you commit yourself to yoga, happiness and inner peace naturally become a part of your life.\"",
       image: "/founders/12.jpeg",
     },
+    {
+      name: "Hussain Swalahi",
+      role: "HST ARABIC, Govt.HSS Kuttamassery",
+      bio: "\"Education is not just about teaching words, it's about lighting up lives. Inspiring the younger generation with wisdom and values brings true happiness.\"",
+      image: "/founders/13.jpeg",
+    },
   ] satisfies Founder[],
 } as const;
