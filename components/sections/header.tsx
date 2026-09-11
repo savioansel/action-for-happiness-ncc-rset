@@ -46,12 +46,12 @@ export function Header() {
           : "bg-white/70 backdrop-blur-md",
       )}
     >
-      <div className="container-page flex h-20 items-center justify-between gap-5">
-        <Link href="/" className="focus-ring rounded-2xl">
+      <div className="container-page flex h-20 items-center justify-between gap-3 xl:gap-6">
+        <Link href="/" className="focus-ring shrink-0 rounded-2xl">
           <LogoPair showText />
         </Link>
 
-        <nav aria-label="Primary navigation" className="hidden items-center gap-1 lg:flex">
+        <nav aria-label="Primary navigation" className="hidden items-center gap-0.5 xl:gap-1 lg:flex">
           {siteContent.navigation.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -59,7 +59,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "focus-ring rounded-full px-3.5 py-2 text-sm font-semibold transition",
+                  "focus-ring whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13px] font-semibold transition xl:px-3.5 xl:py-2 xl:text-sm",
                   isActive
                     ? "bg-orange-soft text-orange font-bold"
                     : "text-navy/76 hover:bg-navy/5 hover:text-navy",
@@ -71,9 +71,9 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <Button asChild size="sm">
-            <Link href="/#volunteer">
+            <Link href="/#volunteer" className="whitespace-nowrap">
               Volunteer
               <ArrowRight className="size-4" aria-hidden="true" />
             </Link>
