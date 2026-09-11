@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { X, BookOpen } from "lucide-react";
+import Link from "next/link";
+import { X, BookOpen, ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { Stagger, StaggerItem } from "@/components/motion/reveal";
@@ -97,6 +98,29 @@ export function FoundersSection() {
         );
       })}
       </Stagger>
+
+      {/* Link to Governing Body Page */}
+      <div className="mt-12 rounded-2xl border border-navy/10 bg-white p-6 sm:p-8 shadow-card flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <span className="text-xs font-bold uppercase tracking-wider text-orange">
+            Organizational Structure
+          </span>
+          <h3 className="mt-1 text-xl sm:text-2xl font-bold text-navy">
+            View the Governing Body
+          </h3>
+          <p className="mt-1 text-sm text-ink/70 max-w-xl">
+            Explore the official designations and administrative leadership council of our initiative.
+          </p>
+        </div>
+        <Link
+          href="/governing-body"
+          className="focus-ring shrink-0 inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-bold text-white shadow-sm hover:bg-navy/90 hover:text-white transition-all"
+        >
+          View Governing Body
+          <ArrowRight className="size-4" />
+        </Link>
+
+      </div>
 
       <AnimatePresence>
         {selectedFounder && (

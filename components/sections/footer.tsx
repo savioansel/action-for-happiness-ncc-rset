@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LogoPair } from "@/components/logo-pair";
 import { siteContent } from "@/data/site-content";
 
@@ -7,7 +8,9 @@ export function Footer() {
       <div className="container-page">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div>
-            <LogoPair showText onDark logoClassName="h-14 w-12" />
+            <Link href="/" className="inline-block focus-ring rounded-2xl">
+              <LogoPair showText onDark logoClassName="h-14 w-12" />
+            </Link>
             <p className="mt-5 max-w-xl text-base leading-7 text-white/70">
               {siteContent.organization.affiliation}
             </p>
@@ -38,14 +41,14 @@ export function Footer() {
                 Explore
               </p>
               <div className="mt-3 space-y-2 text-base font-semibold">
-                {siteContent.navigation.slice(0, 4).map((item) => (
-                  <a
+                {siteContent.navigation.map((item) => (
+                  <Link
                     href={item.href}
                     key={item.href}
                     className="focus-ring block rounded-lg text-white/82 hover:text-white"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -59,3 +62,4 @@ export function Footer() {
     </footer>
   );
 }
+

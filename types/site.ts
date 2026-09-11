@@ -33,3 +33,12 @@ export type Founder = {
   image: string;
 };
 
+export type GoverningBodyMember = {
+  name: string;
+  designation: string;
+  category: "office-bearer" | "executive-member";
+  role: string;
+  bio: string;
+  image: string;
+};
+

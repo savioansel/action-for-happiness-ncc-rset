@@ -1,6 +1,8 @@
 "use client";
 
 import { ArrowRight, Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { LogoPair } from "@/components/logo-pair";
@@ -11,6 +13,7 @@ import { cn } from "@/lib/utils";
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 18);
@@ -44,28 +47,36 @@ export function Header() {
       )}
     >
       <div className="container-page flex h-20 items-center justify-between gap-5">
-        <a href="#top" className="focus-ring rounded-2xl">
+        <Link href="/" className="focus-ring rounded-2xl">
           <LogoPair showText />
-        </a>
+        </Link>
 
         <nav aria-label="Primary navigation" className="hidden items-center gap-1 lg:flex">
-          {siteContent.navigation.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="focus-ring rounded-full px-4 py-2 text-sm font-semibold text-navy/76 transition hover:bg-navy/5 hover:text-navy"
-            >
-              {item.label}
-            </a>
-          ))}
+          {siteContent.navigation.map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "focus-ring rounded-full px-3.5 py-2 text-sm font-semibold transition",
+                  isActive
+                    ? "bg-orange-soft text-orange font-bold"
+                    : "text-navy/76 hover:bg-navy/5 hover:text-navy",
+                )}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
           <Button asChild size="sm">
-            <a href="#volunteer">
+            <Link href="/#volunteer">
               Volunteer
               <ArrowRight className="size-4" aria-hidden="true" />
-            </a>
+            </Link>
           </Button>
         </div>
 
@@ -89,20 +100,23 @@ export function Header() {
         <div className="min-h-0">
           <nav aria-label="Mobile navigation" className="container-page flex flex-col py-4">
             {siteContent.navigation.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
-                className="focus-ring rounded-2xl px-4 py-3 text-base font-semibold text-navy"
+                className={cn(
+                  "focus-ring rounded-2xl px-4 py-3 text-base font-semibold",
+                  pathname === item.href ? "bg-orange-soft text-orange" : "text-navy",
+                )}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button asChild className="mt-3 w-full">
-              <a href="#volunteer" onClick={() => setIsOpen(false)}>
+              <Link href="/#volunteer" onClick={() => setIsOpen(false)}>
                 Volunteer
                 <ArrowRight className="size-4" aria-hidden="true" />
-              </a>
+              </Link>
             </Button>
           </nav>
         </div>
@@ -110,3 +124,4 @@ export function Header() {
     </header>
   );
 }
+
