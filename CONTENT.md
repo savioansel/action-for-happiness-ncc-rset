@@ -4,7 +4,7 @@
 
 Happiness Promoters
 
-Rajagiri School of Engineering & Technology (Autonomous)
+A Charitable Society
 
 Location:
 Renewable Energy Centre, Mithradham

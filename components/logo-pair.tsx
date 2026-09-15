@@ -43,6 +43,16 @@ export function LogoPair({
           >
             {siteContent.organization.name}
           </p>
+          {siteContent.organization.tagline ? (
+            <p
+              className={cn(
+                "max-w-[260px] truncate text-xs font-medium",
+                onDark ? "text-white/68" : "text-ink/68",
+              )}
+            >
+              {siteContent.organization.tagline}
+            </p>
+          ) : null}
         </div>
       ) : null}
     </div>

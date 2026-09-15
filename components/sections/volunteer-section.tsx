@@ -105,6 +105,7 @@ export function VolunteerSection() {
             className="rounded-[1.5rem] bg-white p-5 shadow-soft ring-1 ring-navy/6 sm:p-8"
             onSubmit={handleSubmit}
             noValidate
+            suppressHydrationWarning
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <Field
@@ -215,7 +216,7 @@ function Field({
   className?: string;
 }) {
   return (
-    <div className={cn("space-y-2", className)}>
+    <div suppressHydrationWarning className={cn("space-y-2", className)}>
       <Label htmlFor={id}>{label}</Label>
       {children}
       {error ? (

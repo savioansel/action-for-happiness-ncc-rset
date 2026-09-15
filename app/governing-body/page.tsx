@@ -6,7 +6,7 @@ import { GoverningBodyView } from "@/components/sections/governing-body-view";
 export const metadata: Metadata = {
   title: "Governing Body | Action for Happiness",
   description:
-    "Meet the Governing Body and leadership council of the Action for Happiness initiative, Rajagiri School of Engineering & Technology.",
+    "Meet the Governing Body and leadership council of Happiness Promoters – A Charitable Society.",
 };
 
 export default function GoverningBodyPage() {

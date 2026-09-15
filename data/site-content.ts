@@ -11,8 +11,9 @@ import type {
 export const siteContent = {
   organization: {
     name: "Happiness Promoters",
+    tagline: "A Charitable Society",
     affiliation:
-      "Rajagiri School of Engineering & Technology (Autonomous)",
+      "A charitable society dedicated to fostering mutual care, community service, and spreading happiness.",
     location: [
       "Renewable Energy Centre,",
       "Mithradham,",

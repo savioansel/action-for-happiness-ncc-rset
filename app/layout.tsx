@@ -15,9 +15,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Happiness Promotes",
+  title: "Happiness Promoters | A Charitable Society",
   description:
-    "Happiness Promotes initiative of Rajagiri School of Engineering & Technology.",
+    "Happiness Promoters – A charitable society dedicated to fostering mutual care, community service, and spreading happiness.",
 };
 
 export default function RootLayout({
@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }
