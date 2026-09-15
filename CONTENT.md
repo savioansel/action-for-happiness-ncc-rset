@@ -2,15 +2,14 @@
 
 ## Organization
 
-Happiness Promotes
+Happiness Promoters
 
 Rajagiri School of Engineering & Technology (Autonomous)
 
 Location:
-Rajagiri School of Engineering & Technology
-Rajagiri Valley
-Kakkanad
-Kochi, Kerala 682039
+Renewable Energy Centre, Mithradham
+Chungamvely, Aluva
+Kerala 683112
 
 ---
 

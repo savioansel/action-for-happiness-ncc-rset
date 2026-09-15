@@ -22,12 +22,15 @@ export function Footer() {
                 Contact
               </p>
               <div className="mt-3 space-y-2 text-base font-semibold">
-                <a
-                  href={`mailto:${siteContent.contact.email}`}
-                  className="focus-ring block rounded-lg text-white/82 hover:text-white"
-                >
-                  {siteContent.contact.email}
-                </a>
+                {siteContent.contact.emails.map((email) => (
+                  <a
+                    key={email}
+                    href={`mailto:${email}`}
+                    className="focus-ring block rounded-lg text-white/82 hover:text-white"
+                  >
+                    {email}
+                  </a>
+                ))}
                 <a
                   href={`tel:${siteContent.contact.phone.replace(/\s/g, "")}`}
                   className="focus-ring block rounded-lg text-white/82 hover:text-white"

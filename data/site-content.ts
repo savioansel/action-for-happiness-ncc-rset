@@ -14,10 +14,11 @@ export const siteContent = {
     affiliation:
       "Rajagiri School of Engineering & Technology (Autonomous)",
     location: [
-      "Rajagiri School of Engineering & Technology,",
-      "Rajagiri Valley,",
-      "Kakkanad,",
-      "Kochi, Kerala 682039",
+      "Renewable Energy Centre,",
+      "Mithradham,",
+      "Chungamvely,",
+      "Aluva,",
+      "Kerala 683112",
     ],
   },
   logo: {
@@ -145,8 +146,9 @@ export const siteContent = {
     },
   ] satisfies FAQItem[],
   contact: {
-    emailLabel: "Email",
-    email: "@gmail.com",
+    emailLabel: "Emails",
+    email: "mithradhamedu@gmail.com",
+    emails: ["mithradhamedu@gmail.com", "vishnusankar9369@gmail.com"],
     phoneLabel: "Phone",
     phone: "+91 98477 47650",
     whatsappLabel: "WhatsApp",

@@ -8,8 +8,7 @@ import { siteContent } from "@/data/site-content";
 const contactItems = [
   {
     label: siteContent.contact.emailLabel,
-    value: siteContent.contact.email,
-    href: `mailto:${siteContent.contact.email}`,
+    emails: siteContent.contact.emails,
     icon: Mail,
   },
   {
@@ -37,18 +36,34 @@ export function ContactSection() {
 
             return (
               <StaggerItem key={item.label}>
-                <a
-                  href={item.href}
-                  className="focus-ring group block h-full rounded-[1.5rem] bg-cream p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft"
-                >
+                <div className="group block h-full rounded-[1.5rem] bg-cream p-6 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-soft">
                   <div className="mb-5 flex size-12 items-center justify-center rounded-2xl bg-white text-orange shadow-sm transition group-hover:bg-orange group-hover:text-white">
                     <Icon className="size-6" aria-hidden="true" />
                   </div>
                   <p className="text-sm font-bold uppercase tracking-[0.16em] text-ink/52">
                     {item.label}
                   </p>
-                  <p className="mt-2 break-words text-lg font-bold text-navy">{item.value}</p>
-                </a>
+                  {item.emails ? (
+                    <div className="mt-2 space-y-1">
+                      {item.emails.map((email) => (
+                        <a
+                          key={email}
+                          href={`mailto:${email}`}
+                          className="focus-ring block break-all text-sm sm:text-base font-bold text-navy hover:text-orange transition-colors"
+                        >
+                          {email}
+                        </a>
+                      ))}
+                    </div>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="focus-ring mt-2 block break-words text-lg font-bold text-navy hover:text-orange transition-colors"
+                    >
+                      {item.value}
+                    </a>
+                  )}
+                </div>
               </StaggerItem>
             );
           })}
