@@ -2,9 +2,8 @@
 
 ## Organization
 
-Community Outreach Initiative
+Happiness Promotes
 
-An Initiative of the NCC Unit,
 Rajagiri School of Engineering & Technology (Autonomous)
 
 Location:

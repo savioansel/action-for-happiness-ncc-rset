@@ -15,9 +15,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Community Outreach Initiative | NCC Unit, RSET",
+  title: "Happiness Promotes",
   description:
-    "A community outreach initiative of the NCC Unit, Rajagiri School of Engineering & Technology.",
+    "Happiness Promotes initiative of Rajagiri School of Engineering & Technology.",
 };
 
 export default function RootLayout({

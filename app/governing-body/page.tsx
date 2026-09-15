@@ -4,9 +4,9 @@ import { Header } from "@/components/sections/header";
 import { GoverningBodyView } from "@/components/sections/governing-body-view";
 
 export const metadata: Metadata = {
-  title: "Governing Body | Action for Happiness - NCC Unit, RSET",
+  title: "Governing Body | Action for Happiness",
   description:
-    "Meet the Governing Body and leadership council of the Action for Happiness initiative, an outreach program by the NCC Unit, Rajagiri School of Engineering & Technology.",
+    "Meet the Governing Body and leadership council of the Action for Happiness initiative, Rajagiri School of Engineering & Technology.",
 };
 
 export default function GoverningBodyPage() {

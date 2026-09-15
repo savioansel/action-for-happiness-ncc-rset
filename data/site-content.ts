@@ -10,9 +10,9 @@ import type {
 
 export const siteContent = {
   organization: {
-    name: "Community Outreach Initiative",
+    name: "Happiness Promoters",
     affiliation:
-      "An Initiative of the NCC Unit, Rajagiri School of Engineering & Technology (Autonomous)",
+      "Rajagiri School of Engineering & Technology (Autonomous)",
     location: [
       "Rajagiri School of Engineering & Technology,",
       "Rajagiri Valley,",
@@ -20,19 +20,11 @@ export const siteContent = {
       "Kochi, Kerala 682039",
     ],
   },
-  logos: {
-    ncc: {
-      src: "/logos/ncc.png",
-      alt: "NCC logo",
-      width: 960,
-      height: 1440,
-    },
-    rset: {
-      src: "/logos/rset-logo.png",
-      alt: "RSET logo",
-      width: 1024,
-      height: 1536,
-    },
+  logo: {
+    src: "/logos/Official Logo.png",
+    alt: "Happiness Promoters logo",
+    width: 500,
+    height: 500,
   },
   navigation: [
     { label: "About", href: "/#about" },
@@ -46,9 +38,9 @@ export const siteContent = {
   ] satisfies NavigationItem[],
   hero: {
     badge: "One Kind Act at a Time",
-    mainHeading: "Action for Happiness",
+    mainHeading: "Happiness Promoters",
+    subHeading: "Action for Happiness",
     headline: "Together, We Can Transform Lives",
-    // headline: "Let's take action to be Happier and Kinder, Together",
     subtitle:
       "Join a growing community of volunteers committed to serving those in need through education, food support, healthcare, environmental initiatives and compassionate outreach.",
     buttons: ["Become a Volunteer", "Explore Our Initiatives"],
@@ -57,12 +49,17 @@ export const siteContent = {
     copy:
       "Our initiative connects students, professionals and members of the public with meaningful opportunities to serve communities through education, healthcare, environmental protection and humanitarian outreach.",
     welcome: "Everyone is welcome to volunteer.",
+    vision: "Let every existence in the universe be happy",
+    mission:
+      "Create clusters of three to four neighbourhood families who form as a group and agree by a written contact to help each other except in matters of money.",
+    distinctiveFeature:
+      "The distinctive feature of Happiness Promoters is that it is not primarily a charity organisation; it is trying to create a culture of mutual care among neighbourhood families. Therefore, the income-generating activities should ideally also promote happiness, relationships, learning, service and community.",
   },
   mission: [
+    "Form neighbourhood family clusters.",
+    "Foster a culture of mutual care.",
+    "Promote relationships & learning.",
     "Serve communities with compassion.",
-    "Support underprivileged people.",
-    "Build volunteer participation.",
-    "Create lasting social impact.",
   ],
   serviceAreas: [
     "Food Distribution",
@@ -149,16 +146,16 @@ export const siteContent = {
   ] satisfies FAQItem[],
   contact: {
     emailLabel: "Email",
-    email: "nccrset2023@gmail.com",
+    email: "@gmail.com",
     phoneLabel: "Phone",
-    phone: "+91 95676 83959",
+    phone: "+91 98477 47650",
     whatsappLabel: "WhatsApp",
-    whatsapp: "+91 85903 76816",
+    whatsapp: "+91 95676 83959",
   },
   images: {
     hero: {
-      src: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=2200&q=85",
-      alt: "Volunteers preparing food support boxes for community distribution",
+      src: "/banner/Main Banner.png",
+      alt: "Happiness Promoters main banner",
     },
     about: {
       src: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1400&q=85",

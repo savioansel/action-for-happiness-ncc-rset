@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div>
             <Link href="/" className="inline-block focus-ring rounded-2xl">
-              <LogoPair showText onDark logoClassName="h-14 w-12" />
+              <LogoPair showText onDark logoClassName="h-14 w-14" />
             </Link>
             <p className="mt-5 max-w-xl text-base leading-7 text-white/70">
               {siteContent.organization.affiliation}

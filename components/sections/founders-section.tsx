@@ -46,7 +46,7 @@ export function FoundersSection() {
       <SectionHeading
         eyebrow="Leadership"
         title="Meet Our Founders"
-        description="The visionary team behind the Action for Happiness community outreach initiative."
+        description="The visionary team behind the Action for Happiness - Happiness Promoters initiative."
       />
 
       <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -67,36 +67,36 @@ export function FoundersSection() {
                 onClick={() => setSelectedFounder(founder)}
                 className="focus-ring group w-full text-left flex items-stretch rounded-[1.25rem] bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-soft cursor-pointer overflow-hidden"
               >
-              {/* Left-side Image with Gradient Transition */}
-              <div className="relative w-24 sm:w-28 shrink-0 overflow-hidden">
-                <Image
-                  src={founder.image}
-                  alt={founder.name}
-                  fill
-                  sizes="(min-width: 640px) 112px, 96px"
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                />
-                {/* Smooth transition gradient to blend image into the white card */}
-                <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-r from-transparent to-white" />
-              </div>
+                {/* Left-side Image with Gradient Transition */}
+                <div className="relative w-24 sm:w-28 shrink-0 overflow-hidden">
+                  <Image
+                    src={founder.image}
+                    alt={founder.name}
+                    fill
+                    sizes="(min-width: 640px) 112px, 96px"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+                  {/* Smooth transition gradient to blend image into the white card */}
+                  <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-r from-transparent to-white" />
+                </div>
 
-              {/* Content area */}
-              <div className="min-w-0 flex-1 flex flex-col justify-center py-4 pr-5 pl-2 sm:pl-3">
-                <h3 className="text-lg font-bold text-navy line-clamp-1 group-hover:text-orange transition-colors duration-200">
-                  {founder.name}
-                </h3>
-                <p className="text-xs sm:text-sm font-medium text-ink/64 line-clamp-2 leading-snug mt-1">
-                  {founder.role}
-                </p>
-                <span className="inline-flex items-center gap-1 text-[10px] font-bold text-orange uppercase tracking-wider mt-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                  <BookOpen className="size-3" />
-                  View Bio
-                </span>
-              </div>
-            </button>
-          </StaggerItem>
-        );
-      })}
+                {/* Content area */}
+                <div className="min-w-0 flex-1 flex flex-col justify-center py-4 pr-5 pl-2 sm:pl-3">
+                  <h3 className="text-lg font-bold text-navy line-clamp-1 group-hover:text-orange transition-colors duration-200">
+                    {founder.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm font-medium text-ink/64 line-clamp-2 leading-snug mt-1">
+                    {founder.role}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-orange uppercase tracking-wider mt-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <BookOpen className="size-3" />
+                    View Bio
+                  </span>
+                </div>
+              </button>
+            </StaggerItem>
+          );
+        })}
       </Stagger>
 
       {/* Link to Governing Body Page */}
