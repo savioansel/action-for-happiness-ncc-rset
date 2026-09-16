@@ -10,6 +10,7 @@ function Label({
   return (
     <LabelPrimitive.Root
       data-slot="label"
+      suppressHydrationWarning
       className={cn("text-sm font-semibold text-navy", className)}
       {...props}
     />

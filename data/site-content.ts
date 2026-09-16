@@ -54,8 +54,22 @@ export const siteContent = {
     vision: "Let every existence in the universe be happy",
     mission:
       "Create clusters of three to four neighbourhood families who form as a group and agree by a written contact to help each other except in matters of money.",
+    areaOfOperation:
+      "The Society shall initially operate throughout the State of Kerala and may extend its activities throughout India, and outside India subject to applicable laws.",
     distinctiveFeature:
       "The distinctive feature of Happiness Promoters is that it is not primarily a charity organisation; it is trying to create a culture of mutual care among neighbourhood families. Therefore, the income-generating activities should ideally also promote happiness, relationships, learning, service and community.",
+    objectives: [
+      "Promote happiness in the Society",
+      "Facilitate formation of Happy Neighbourhood Communities (HNC)",
+      "Offer consultancy services for health and happiness",
+      "Receive and manage financial contributions to promote to all the activities",
+      "Establish an institutional and infrastructure set up for promoting happiness",
+      "Conduct training, awareness and residential programs for happiness promotion to all stakeholders",
+      "Associate with the residential association and similar institutions",
+      "Support philanthropic activities, to promote happiness for under privileged members of the society",
+      "Organize activities in tune with the objectives of our society",
+      "To promote sustainable development and protect nature for healthy living",
+    ],
   },
   mission: [
     "Form neighbourhood family clusters.",

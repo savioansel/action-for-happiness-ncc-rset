@@ -4,7 +4,7 @@ import { Header } from "@/components/sections/header";
 import { GoverningBodyView } from "@/components/sections/governing-body-view";
 
 export const metadata: Metadata = {
-  title: "Governing Body | Action for Happiness",
+  title: "Governing Body | Happiness Promoters",
   description:
     "Meet the Governing Body and leadership council of Happiness Promoters – A Charitable Society.",
 };

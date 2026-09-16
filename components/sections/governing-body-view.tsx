@@ -159,7 +159,7 @@ export function GoverningBodyView() {
                 Governing Body
               </h1>
               <p className="mt-5 text-lg sm:text-xl leading-relaxed text-ink/75">
-                The governing body steering the Action for Happiness initiative. Bringing together academic leaders, healthcare professionals, social pioneers, and educators to guide our mission of compassionate community transformation.
+                The governing body steering the Happiness Promoters initiative. Bringing together academic leaders, healthcare professionals, social pioneers, and educators to guide our mission of compassionate community transformation.
               </p>
             </div>
           </Reveal>

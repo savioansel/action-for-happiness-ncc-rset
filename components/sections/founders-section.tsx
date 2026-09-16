@@ -46,7 +46,7 @@ export function FoundersSection() {
       <SectionHeading
         eyebrow="Leadership"
         title="Meet Our Founders"
-        description="The visionary team behind the Action for Happiness - Happiness Promoters initiative."
+        description="The visionary team behind the Happiness Promoters initiative."
       />
 
       <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

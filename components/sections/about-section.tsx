@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, Eye, HeartHandshake, Target } from "lucide-react";
+import { ArrowRight, CheckCircle2, Compass, Eye, HeartHandshake, ListChecks, Target } from "lucide-react";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { SectionHeading } from "@/components/section-heading";
@@ -15,12 +15,12 @@ export function AboutSection() {
         <SectionHeading
           align="center"
           eyebrow="About Us"
-          title="Action for Happiness"
+          title="Happiness Promoters"
           description={siteContent.about.copy}
         />
       </Reveal>
 
-      {/* Vision & Mission Cards - TOP PRIORITY */}
+      {/* Vision & Mission Cards */}
       <Stagger className="mt-10 grid gap-6 md:grid-cols-2">
         <StaggerItem>
           <div className="h-full rounded-[1.5rem] bg-cream p-7 shadow-card ring-1 ring-navy/5 border-t-4 border-orange transition duration-300 hover:shadow-soft">
@@ -55,27 +55,74 @@ export function AboutSection() {
         </StaggerItem>
       </Stagger>
 
-      {/* Distinctive Feature Callout */}
-      <Reveal delay={0.15} className="mt-6">
-        <div className="relative overflow-hidden rounded-[1.5rem] bg-navy p-7 text-white shadow-soft sm:p-8 ring-1 ring-white/10">
-          <div className="flex flex-col gap-5 md:flex-row md:items-start md:gap-6">
-            <div className="inline-flex size-13 shrink-0 items-center justify-center rounded-2xl bg-orange text-white shadow-lg">
-              <HeartHandshake className="size-6" aria-hidden="true" />
+      {/* Area of Operation & Distinctive Feature Cards */}
+      <Stagger className="mt-6 grid gap-6 md:grid-cols-2">
+        <StaggerItem>
+          <div className="h-full rounded-[1.5rem] bg-cream p-7 shadow-card ring-1 ring-navy/5 border-t-4 border-emerald-600 transition duration-300 hover:shadow-soft flex flex-col justify-start">
+            <div className="mb-4 inline-flex items-center gap-2.5">
+              <div className="flex size-10 items-center justify-center rounded-xl bg-emerald-600 text-white shadow-sm">
+                <Compass className="size-5" aria-hidden="true" />
+              </div>
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
+                Area of Operation
+              </span>
             </div>
-            <div>
+            <p className="text-base sm:text-lg font-medium leading-relaxed text-ink/85">
+              {siteContent.about.areaOfOperation}
+            </p>
+          </div>
+        </StaggerItem>
+
+        <StaggerItem>
+          <div className="h-full rounded-[1.5rem] bg-navy p-7 text-white shadow-soft ring-1 ring-white/10 border-t-4 border-orange transition duration-300 hover:shadow-lg flex flex-col justify-start">
+            <div className="mb-4 inline-flex items-center gap-2.5">
+              <div className="flex size-10 items-center justify-center rounded-xl bg-orange text-white shadow-sm">
+                <HeartHandshake className="size-5" aria-hidden="true" />
+              </div>
               <span className="text-xs font-bold uppercase tracking-wider text-orange">
                 Distinctive Feature
               </span>
-              <h3 className="mt-0.5 text-2xl font-bold text-white">
-                Culture of Mutual Care
-              </h3>
-              <p className="mt-2.5 text-base leading-relaxed text-white/88 sm:text-lg sm:leading-8">
-                {siteContent.about.distinctiveFeature}
-              </p>
             </div>
+            <h4 className="text-xl font-bold text-white mb-2">Culture of Mutual Care</h4>
+            <p className="text-sm sm:text-base leading-relaxed text-white/88">
+              {siteContent.about.distinctiveFeature}
+            </p>
           </div>
-        </div>
-      </Reveal>
+        </StaggerItem>
+      </Stagger>
+
+      {/* Objectives of the Society */}
+      <div className="mt-14 sm:mt-16">
+        <Reveal>
+          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+            <div className="inline-flex items-center gap-2 rounded-full border border-navy/10 bg-cream px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-navy">
+              <ListChecks className="size-3.5 text-orange" aria-hidden="true" />
+              <span>Aims & Mandates</span>
+            </div>
+            <h3 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-navy font-display">
+              Objectives of the Society
+            </h3>
+            <p className="mt-2 text-sm sm:text-base text-ink/75">
+              The Society is established solely for charitable, educational, social welfare and public benefit purposes without any profit motive.
+            </p>
+          </div>
+        </Reveal>
+
+        <Stagger className="grid gap-3.5 sm:grid-cols-2">
+          {siteContent.about.objectives.map((objective, idx) => (
+            <StaggerItem key={idx}>
+              <div className="group flex h-full items-start gap-4 rounded-2xl bg-cream/70 p-4.5 sm:p-5 ring-1 ring-navy/5 transition-all duration-200 hover:bg-white hover:shadow-card hover:ring-navy/15">
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-navy/10 text-xs font-bold text-navy transition-colors duration-200 group-hover:bg-navy group-hover:text-white">
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <p className="text-sm sm:text-base font-medium leading-snug sm:leading-relaxed text-ink/85 pt-0.5">
+                  {objective}
+                </p>
+              </div>
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </div>
 
       {/* Story & Image Section */}
       <div className="mt-14 grid items-center gap-10 lg:grid-cols-[1fr_1.05fr] lg:gap-14">
